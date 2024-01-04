@@ -2,7 +2,11 @@ import antfu from '@antfu/eslint-config'
 
 export default antfu({
   typescript: {
-    filesTypeAware: ['never'],
     tsconfigPath: 'tsconfig.json',
+  },
+  overrides: {
+    typescript: {
+      'node/prefer-global/process': ['error', 'always'],
+    },
   },
 })

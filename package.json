@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.1",
+    "@types/node": "^20.10.6",
     "eslint": "npm:eslint-ts-patch@^8.56.0-0"
   }
 }
