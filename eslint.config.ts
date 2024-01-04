@@ -1,4 +1,3 @@
-// @ts-expect-error missing types
 import styleMigrate from '@stylistic/eslint-plugin-migrate'
 import antfu from './src'
 
@@ -6,7 +5,10 @@ export default antfu(
   {
     vue: true,
     // react: true,
-    typescript: true,
+    typescript: {
+      tsconfigPath: 'tsconfig.json',
+      // filesTypeAware: ['src/index.ts'],
+    },
     ignores: [
       'fixtures',
       '_fixtures',
